@@ -40,7 +40,7 @@ public class SecurityConfig {
                 .requestMatchers("/h2-console/**").permitAll()
                 .anyRequest().authenticated());
         http.httpBasic(Customizer.withDefaults());
-        http.formLogin(Customizer.withDefaults());
+//        http.formLogin(Customizer.withDefaults());
         http.logout(Customizer.withDefaults());
         return http.build();
 

@@ -20,7 +20,7 @@ public class AccountController {
     @GetMapping("/transactions")
     public List<String> transactions(Authentication authentication) {
         String username = authentication.getName();
-        return List.of("Payment -50 EUR to Amazon","Salary + 2000 EUR ");
+        return List.of("Current for " + username + ":" + "Payment -50 EUR to Amazon","Salary + 2000 EUR ");
     }
 
 }
